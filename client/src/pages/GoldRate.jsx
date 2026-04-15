@@ -1,0 +1,1 @@
+export default function GoldRate() { return <div className="p-20 text-center"><h1 className="text-4xl font-playfair text-primary mb-6">Live Gold Rates in Tamil Nadu</h1><div className="text-2xl border p-10 mt-10 rounded shadow-lg mx-auto max-w-lg bg-white"><p>24K (99.9%): ₹7,150 /g</p><p>22K (91.6%): ₹6,554 /g</p><p>18K (75.0%): ₹5,362 /g</p></div></div>; }

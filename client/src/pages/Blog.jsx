@@ -1,0 +1,1 @@
+export default function Blog() { return <div className="p-20 text-center text-3xl font-playfair">Gold Investment Blog</div>; }

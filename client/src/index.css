@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#0A0A0A] text-gray-200 font-inter selection:bg-[#C9A227] selection:text-white;
+    background-attachment: fixed;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair tracking-wide text-white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#C9A227] text-white font-bold py-3 px-6 rounded-full transition-all duration-300 transform;
+    box-shadow: 0 0 15px rgba(201, 162, 39, 0.4);
+  }
+  .btn-primary:hover {
+    @apply bg-[#A6841C] scale-105;
+    box-shadow: 0 0 25px rgba(201, 162, 39, 0.6);
+  }
+  .btn-secondary {
+    @apply bg-[#121212] border border-[#C9A227]/30 text-white font-bold py-3 px-6 rounded-full transition-all duration-300;
+  }
+  .btn-secondary:hover {
+    @apply bg-[#1E1E1E];
+  }
+  .card {
+    @apply bg-[#1E1E1E]/60 backdrop-blur-md border border-white/5 rounded-2xl transition-all duration-500 overflow-hidden;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  }
+  .card:hover {
+    @apply border-[#C9A227]/20 scale-[1.02];
+  }
+  .glass-nav {
+    @apply bg-[#0A0A0A]/80 backdrop-blur-lg border-b border-white/5 sticky top-0 z-50;
+  }
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.shimmer {
+  background: #f6f7f8;
+  background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+  background-repeat: no-repeat;
+  background-size: 800px 100%;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeholderShimmer;
+  animation-timing-function: linear;
+}
+
+@keyframes placeholderShimmer {
+  0% { background-position: -468px 0; }
+  100% { background-position: 468px 0; }
+}
+
+/* Hide scrollbar for carousel but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

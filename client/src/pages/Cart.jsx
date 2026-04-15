@@ -1,0 +1,1 @@
+export default function Cart() { return <div className="p-20 text-center text-3xl font-playfair">Shopping Cart Features Loading...</div>; }

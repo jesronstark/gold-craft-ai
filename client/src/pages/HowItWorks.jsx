@@ -1,0 +1,1 @@
+export default function HowItWorks() { return <div className="p-20 text-center text-3xl font-playfair">How We Source Bank Gold</div>; }

@@ -1,0 +1,1 @@
+export default function Orders() { return <div className="p-20 text-center text-3xl font-playfair">Order History</div>; }

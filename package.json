@@ -1,0 +1,10 @@
+{
+  "name": "gold-craft-monorepo",
+  "version": "1.0.0",
+  "scripts": {
+    "both": "concurrently \"npm start --prefix server\" \"npm run dev --prefix client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -1,0 +1,1 @@
+export default function Reviews() { return <div className="p-20 text-center text-3xl font-playfair">15,000+ Customer Reviews</div>; }
