@@ -30,7 +30,7 @@ const Profile = () => {
       <div className="mt-12 bg-white p-8 rounded-xl shadow-lg border border-gray-100">
         <h2 className="text-2xl font-bold mb-6 font-playfair border-b pb-4">Your Recent Orders</h2>
         <div className="space-y-4">
-          {[1,2,3].map((order, i) => (
+          {[1, 2, 3].map((_order, i) => (
             <div key={i} className="flex justify-between items-center bg-cream p-4 rounded border border-gray-200">
               <div>
                 <p className="font-bold">Order #ORD-{Math.floor(Math.random() * 10000)}</p>

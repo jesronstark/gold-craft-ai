@@ -5,7 +5,7 @@ import { CartContext } from '../context/CartContext';
 import { ShoppingCart, User, Menu } from 'lucide-react';
 
 const Navbar = () => {
-  const { user, logout } = useContext(AuthContext);
+  const { user } = useContext(AuthContext);
   const { cart } = useContext(CartContext);
 
   return (

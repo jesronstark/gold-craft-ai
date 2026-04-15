@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 const ProductDetail = () => {
-  const { id } = useParams();
+  const { id: _id } = useParams();
   
   const handleBuyNow = () => {
     const message = `Hello Gold Craft! I want to order:\nProduct: Sample Necklace \nWeight: 20g | Purity: 22K\nQty: 1 | Total: ₹135,000\nPlease confirm my order.`;
